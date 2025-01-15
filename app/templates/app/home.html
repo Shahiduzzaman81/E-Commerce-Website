@@ -96,7 +96,7 @@
 
 <style>
   .bg-custom {
-    background: linear-gradient(45deg, #6a1e9c, #9c27b0); /* Lighter Violet shades */
+    background: linear-gradient(45deg,rgb(30, 152, 156),rgb(39, 139, 176)); /* Lighter Violet shades */
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(156, 39, 176, 0.3);
   }
@@ -135,7 +135,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 3rem;
     font-weight: 700;
-    background: linear-gradient(135deg, rgb(148, 0, 211), rgb(138, 43, 226));
+    color:sky-blue;
     -webkit-background-clip: text;
     color: transparent;
     text-align: center;
@@ -147,10 +147,10 @@
 
   @keyframes glow {
     0% {
-      text-shadow: 0 0 5px #8a2be2, 0 0 10px #8a2be2, 0 0 15px #9400d3, 0 0 20px #9400d3; /* Violet shades */
+      {% comment %} text-shadow: 0 0 5px #8a2be2, 0 0 10px #8a2be2, 0 0 15px #9400d3, 0 0 20px #9400d3; /* Violet shades */ {% endcomment %}
     }
     100% {
-      text-shadow: 0 0 10px #8a2be2, 0 0 20px #9400d3, 0 0 30px #8a2be2, 0 0 40px #9400d3; /* Violet shades */
+      {% comment %} text-shadow: 0 0 10px #8a2be2, 0 0 20px #9400d3, 0 0 30px #8a2be2, 0 0 40px #9400d3; /* Violet shades */ {% endcomment %}
     }
 }
 
@@ -193,7 +193,7 @@
   <div class="row container mx-auto">
     <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;">
       <div class="goodnesssec buttermilk smbg">
-        <a href="{% url 'category' 'ML' %}" class="product-link">
+        <a href="{% url 'category' 'MS' %}" class="product-link">
           <div class="goodnessseccont text-center">
             <img src="{% static 'app/images/product/milk-shake-chocolate.png' %}" alt="Scent" class="img-responsive center-block">
             <p class="mlkpro">Milkshake</p>
